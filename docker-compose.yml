@@ -7,7 +7,7 @@ services:
     volumes:
       - ./app:/var/www/app
       - ./php.ini:/opt/docker/etc/php/php.ini
-      - ./apache-sites/50-site.conf:/opt/docker/etc/httpd/vhost.common.d/50-site.conf
+      - ./50-site.conf:/opt/docker/etc/httpd/vhost.common.d/50-site.conf
     environment:
       - ALLOW_OVERRIDE=true
       - WEB_DOCUMENT_ROOT=/var/www/app/public
